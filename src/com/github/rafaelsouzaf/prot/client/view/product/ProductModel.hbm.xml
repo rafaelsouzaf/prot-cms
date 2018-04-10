@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.github.rafaelsouzaf.prot.client.view.product.ProductModel" table="pd_product" dynamic-update="true" dynamic-insert="true" select-before-update="false">
+		<id name="productId">
+			<generator class="native" />
+		</id>
+		<property name="productCode" />
+		<property name="productName" />
+		<property name="productDescription" />
+		<property name="productUrl" />
+		<property name="productCreateDate" type="timestamp" />
+		<property name="productModifiedDate" type="timestamp" />
+		
+        <list name="categories" cascade="all">
+            <key column="productId"/>
+            <index column="idx"/>
+            <one-to-many class="com.github.rafaelsouzaf.prot.client.view.product.category.CategoryModel"/>
+        </list>
+	</class>
+</hibernate-mapping>

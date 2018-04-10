@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="cl.codisa.canela.client.view.user.UserModel" table="pd_user">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="username" />
+		<property name="firstname" />
+		<property name="midlename" />
+		<property name="lastname" />
+		<property name="password" />
+		<property name="status" />
+		<property name="createDate" type="timestamp" column="create_date" />
+		<property name="modifiedDate" type="timestamp" column="modified_date" />
+	</class>
+</hibernate-mapping>

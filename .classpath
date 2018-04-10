@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/gwt-windows-1.6.4/gxt-2.0-m1/gwt-dev-patch.jar"/>
+	<classpathentry kind="con" path="com.google.gwt.eclipse.core.GWT_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/GWT-GXT"/>
+	<classpathentry kind="lib" path="C:/Users/Rafael/Downloads/hibernate-distribution-3.3.1.GA-dist/hibernate-distribution-3.3.1.GA/hibernate3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rafael/Downloads/hibernate-annotations-3.4.0.GA/hibernate-annotations-3.4.0.GA/hibernate-annotations.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rafael/Downloads/hibernate-annotations-3.4.0.GA/hibernate-annotations-3.4.0.GA/lib/hibernate-commons-annotations.jar"/>
+	<classpathentry kind="output" path="war/WEB-INF/classes"/>
+</classpath>

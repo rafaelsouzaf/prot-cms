@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="com.github.rafaelsouzaf.prot.client.view.edition.EditionModel" table="pd_edition">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+		<property name="name" />
+		<property name="date" type="timestamp" column="date" />
+		<property name="midlename" />
+		<property name="lastname" />
+		<property name="createDate" type="timestamp" column="create_date" />
+		<property name="modifiedDate" type="timestamp" column="modified_date" />
+		
+		<set name="product" table="pd_product">
+			<key column="PRODUCT_ID"/>
+			<many-to-many column="ID" class="com.github.rafaelsouzaf.prot.client.view.product.ProductModel"/>
+		</set>
+		
+	</class>
+</hibernate-mapping>

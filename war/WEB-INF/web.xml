@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE web-app
+    PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+    "http://java.sun.com/dtd/web-app_2_3.dtd">
+
+<web-app>
+
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>ProtCMS.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>ProductServiceImpl</servlet-name>
+    <servlet-class>com.github.rafaelsouzaf.prot.server.ProductServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ProductServiceImpl</servlet-name>
+    <url-pattern>/prot/ProductService</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>UserServiceImpl</servlet-name>
+    <servlet-class>com.github.rafaelsouzaf.prot.server.UserServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServiceImpl</servlet-name>
+    <url-pattern>/prot/UserService</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>EditionServiceImpl</servlet-name>
+    <servlet-class>com.github.rafaelsouzaf.prot.server.EditionServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditionServiceImpl</servlet-name>
+    <url-pattern>/prot/EditionService</url-pattern>
+  </servlet-mapping>
+</web-app>
